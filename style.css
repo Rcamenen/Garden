@@ -1,0 +1,198 @@
+:root{
+    --color-bg-main: white;
+    --color-bg-secondary: grey;
+
+    --color-text-main:black;
+    --color-text-secondary: black;
+
+    --color-1: #933645;
+    --color-2: #17CD28;
+
+    --font-title: 'megan_juneregular';
+    --font-para: 'cabin-bold-webfont';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+@font-face {
+    font-family: 'megan_juneregular';
+    src: url('./fonts/megan_june-webfont.woff2') format('woff2'),
+         url('./fonts/megan_june-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cabin-regular-webfont';
+    src: url('./fonts/cabin-regular-webfont.woff2') format('woff2'),
+         url('./fonts/cabin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: var(--color-bg-secondary);
+    font-family: var(--font-title);
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header{
+    background-color: var(--color-bg-main);
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    padding-top: 16px;
+}
+
+#banner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 16px;
+}
+
+#logo{
+    border-bottom: 10px solid var(--color-1);
+}
+
+#menuPrincipal{
+    display: flex;
+    gap: 16px;
+}
+
+#menuPrincipal li{
+    height: 100%;
+}
+
+#menuPrincipal li a{
+    text-align: center;
+}
+
+#menuPrincipal .activeLink{
+    border-bottom: 10px solid var(--color-2);
+}
+
+#menuPrincipal li:hover{
+    border-bottom: 10px solid var(--color-2);
+}
+
+#main #slider{
+    height: 300px;
+    background-image: url('./images/swiper-3.jpg');
+    background-position: bottom;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+#main #slider h1{
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    line-height: 1;
+}
+
+#main #slider p{
+    line-height: 1;
+    font-size: 1.6rem;
+    height: 60px;
+}
+
+.textAccent{
+    display: inline-block;
+    color: #17CD28;
+    border-bottom: 10px solid white;
+    height: 100%;
+}
+
+#enAvant{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #DDDCDC;
+    padding: 32px 0;
+}
+
+.category{
+    width: 230px;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 16px;
+    border: 1px solid rgba(129, 129, 129, 0.565);
+}
+
+.category .titleBox{
+    border-bottom: 3px solid var(--color-1);
+    text-align: center;
+    width: 30px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.category h2{
+    display: inline;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    white-space: preserve nowrap;
+}
+
+.category p{
+
+    font-size: 0.7rem;
+    font-family: var(--font-para);
+
+}
+
+.iconeCategory{
+    width: 25px;
+}
+
+#CTA{
+    display: flex;
+    background-color: white;
+    border: 1px solid;
+}
+
+#CTA #left{
+    /* width: 40%; */
+    border: 1px solid;
+    padding: 32px 16px;
+}
+
+#CTA #right{
+    padding: 56px 0;
+}
+
+#CTA h2{
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+#CTA img{
+    width: 220px;
+}
