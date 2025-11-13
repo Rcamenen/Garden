@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garden</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
     <header id="header" class="container">
@@ -15,17 +19,42 @@
                 <a href="#"><li>A PROPOS</li></a>
                 <a href="#"><li>GALERIE</li></a>
                 <a href="#"><li>SERVICES</li></a>
-                <a href="#"><li>CONTACT</li></a>
+                <a href="#footer"><li>CONTACT</li></a>
             </ul>
         </nav>
     </header>
     <main id="main" class="container">
-        <div id="slider">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="./images/swiper-1.jpg" data-thumb="./images/swiper-1.jpg" alt="" title="#htmlcaption1"/>
+                <img src="./images/swiper-2.jpg" data-thumb="./images/swiper-2.jpg" alt="" title="#htmlcaption2"/>
+                <img src="./images/swiper-3.jpg" data-thumb="./images/swiper-3.jpg" alt="" title="#htmlcaption3"/>
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <div>
+                    <h1>GARDEN</h1>
+                    <p><span class="textAccent">PRO</span> DESIGN D'EXTERIEUR</p>                
+                </div>
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <div>
+                    <h1>GARDEN</h1>
+                    <p><span class="textAccent">PRO</span> DESIGN D'EXTERIEUR</p>                
+                </div>
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <div>
+                    <h1>GARDEN</h1>
+                    <p><span class="textAccent">PRO</span> DESIGN D'EXTERIEUR</p>                
+                </div>
+            </div>             
+        </div>
+        <!-- <div class="slider">
             <div>
                 <h1>GARDEN</h1>
                 <p><span class="textAccent">PRO</span> DESIGN D'EXTERIEUR</p>                
             </div>
-        </div>
+        </div> -->
         <section id="enAvant">
             <div class="category">
                 <img src="./images/ampoule.PNG" alt="" class="iconeCategory">
@@ -54,7 +83,7 @@
             
             <div id="left">
                 <h2>LE DESIGN <br>DE PAYSAGE</h2>
-                <img src="./images/home-02.jpg" alt="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem perferendis obcaecati fuga quas eaque culpa. Repellendus autem velit debitis aut.
+                <img src="./images/home-02.jpg" alt="">
             </div>
 
             <div id="right">
@@ -68,13 +97,39 @@
                         <li class="item"><img src="./images/feuille-picto.jpg" alt=""><p>Proportions</p></li>
                         <li class="item"><img src="./images/feuille-picto.jpg" alt=""><p>Harmonie</p></li>
                     </ul>
-            <button>Plus d'infos</button>
+                <button>Plus d'infos</button>
             </div>
 
         </div>
-    </main>
-    <footer id="footer">
 
+        <div id="pub">
+
+        </div>
+    </main>
+    <footer id="footer" class="container">
+        <div class="colonne">
+            <address>
+                <span>Garden</span><br>
+                Za des petits bois - 56103 Lorient cedex 7
+            </address>
+            <div class="reseaux">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+        <div class="colonne">
+            <a href="#header"><img class="retour" src="./images/flechehaut.png" alt=""></a>
+            <p>&copy;Copyright Greta 2018 - Mentions Légales</p>
+        </div>
     </footer>
+    <script type="text/javascript" src="./scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="./scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
 </body>
 </html> 
